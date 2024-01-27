@@ -1,6 +1,6 @@
 {
     "project_name": "{{cookiecutter.project_name}}",
-    "author": "Your Name",
-    "email": "your.email@example.com",
-    "python_version": "{{cookiecutter.python_version"
+    "author": "{{cookiecutter.author}}",
+    "email": "{{cookiecutter.email}}",
+    "python_version": "{{cookiecutter.python_version}}"
   }

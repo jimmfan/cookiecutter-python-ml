@@ -1,6 +1,6 @@
-PROJECT=python-project-template
+PROJECT={{cookiecutter.project_name}}
 VERSION=0.1.0
-PYTHON_VERSION=3.10
+PYTHON_VERSION={{cookiecutter.python_version}}
 POETRY_VERSION=1.7
 SOURCE_OBJECTS=src tests
 

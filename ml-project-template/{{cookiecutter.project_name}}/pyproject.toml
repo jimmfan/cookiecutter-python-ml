@@ -1,19 +1,19 @@
 [tool.poetry]
-name = "Python Project Template"
+name = "{{cookiecutter.project_name}}"
 version = "0.1.0"
 description = ""
-authors = ["jimmfan <jimmfan@github.com>"]
+authors = ["{{cookiecutter.author}} <{{cookiecutter.email}}>"]
 readme = "README.md"
 packages = [{include = "src"}]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.dependencies]
 python = "{{cookiecutter.python_version}}"
 
 [tool.poetry.group.dev.dependencies]
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
 profile = "black"

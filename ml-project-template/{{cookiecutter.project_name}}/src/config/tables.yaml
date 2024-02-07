@@ -11,11 +11,11 @@ query_templates:
   high_value_users: >
     SELECT user_id, SUM(transaction_amount) as total_spent
     FROM transactions
-    WHERE transaction_date > '{{ start_date }}'
+    WHERE transaction_date > '{ start_date }'
     GROUP BY user_id
     HAVING total_spent > 10000
 
   recent_transactions: >
     SELECT *
     FROM transactions
-    WHERE transaction_date BETWEEN '{{ start_date }}' AND '{{ end_date }}'
+    WHERE transaction_date BETWEEN '{ start_date }' AND '{ end_date }'
